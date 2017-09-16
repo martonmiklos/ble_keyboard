@@ -160,7 +160,8 @@
 <packages>
 <package name="YJ-14015">
 <wire x1="-7.5" y1="0" x2="7.5" y2="0" width="0.000128125" layer="21"/>
-<wire x1="7.5" y1="0" x2="7.5" y2="20" width="0.000128125" layer="21"/>
+<wire x1="7.5" y1="0" x2="7.5" y2="17" width="0.000128125" layer="21"/>
+<wire x1="7.5" y1="17" x2="7.5" y2="20" width="0.000128125" layer="21"/>
 <wire x1="7.5" y1="20" x2="-7.5" y2="20" width="0.000128125" layer="21"/>
 <wire x1="-7.5" y1="20" x2="-7.5" y2="0" width="0.000128125" layer="21"/>
 <smd name="P.03" x="-1.65" y="0" dx="1.2" dy="0.7" layer="1" rot="R90"/>
@@ -203,6 +204,49 @@
 <rectangle x1="-4.2" y1="-5.32" x2="7.8" y2="43.78" layer="40" rot="R90"/>
 <text x="-5.08" y="10.16" size="1.9304" layer="25">&gt;NAME</text>
 <text x="-6.35" y="-3.81" size="1.9304" layer="27">&gt;VALUE</text>
+<wire x1="-4.318" y1="17.018" x2="-4.318" y2="19.558" width="0.1524" layer="21"/>
+<wire x1="-4.318" y1="19.558" x2="-3.556" y2="19.558" width="0.1524" layer="21"/>
+<wire x1="-3.556" y1="17.018" x2="-3.556" y2="19.558" width="0.1524" layer="21"/>
+<wire x1="-3.556" y1="19.558" x2="-2.794" y2="19.558" width="0.1524" layer="21"/>
+<wire x1="-2.794" y1="19.558" x2="-2.794" y2="18.288" width="0.1524" layer="21"/>
+<wire x1="-2.794" y1="18.288" x2="-2.286" y2="18.288" width="0.1524" layer="21"/>
+<wire x1="-2.286" y1="18.288" x2="-2.286" y2="19.558" width="0.1524" layer="21"/>
+<wire x1="-2.286" y1="19.558" x2="-1.778" y2="19.558" width="0.1524" layer="21"/>
+<wire x1="-1.778" y1="19.558" x2="-1.778" y2="18.288" width="0.1524" layer="21"/>
+<wire x1="-1.778" y1="18.288" x2="-1.27" y2="18.288" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="18.288" x2="-1.27" y2="19.558" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="19.558" x2="-0.762" y2="19.558" width="0.1524" layer="21"/>
+<wire x1="-0.762" y1="19.558" x2="-0.762" y2="18.288" width="0.1524" layer="21"/>
+<wire x1="-0.762" y1="18.288" x2="-0.254" y2="18.288" width="0.1524" layer="21"/>
+<wire x1="-0.254" y1="18.288" x2="-0.254" y2="19.558" width="0.1524" layer="21"/>
+<wire x1="-0.254" y1="19.558" x2="0.254" y2="19.558" width="0.1524" layer="21"/>
+<wire x1="0.254" y1="19.558" x2="0.254" y2="18.288" width="0.1524" layer="21"/>
+<wire x1="0.254" y1="18.288" x2="0.762" y2="18.288" width="0.1524" layer="21"/>
+<wire x1="0.762" y1="18.288" x2="0.762" y2="19.558" width="0.1524" layer="21"/>
+<wire x1="0.762" y1="19.558" x2="1.27" y2="19.558" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="19.558" x2="1.27" y2="18.288" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="18.288" x2="1.778" y2="18.288" width="0.1524" layer="21"/>
+<wire x1="1.778" y1="18.288" x2="1.778" y2="19.558" width="0.1524" layer="21"/>
+<wire x1="1.778" y1="19.558" x2="2.286" y2="19.558" width="0.1524" layer="21"/>
+<wire x1="2.286" y1="19.558" x2="2.286" y2="18.288" width="0.1524" layer="21"/>
+<wire x1="2.286" y1="18.288" x2="2.794" y2="18.288" width="0.1524" layer="21"/>
+<wire x1="2.794" y1="18.288" x2="2.794" y2="19.558" width="0.1524" layer="21"/>
+<wire x1="2.794" y1="19.558" x2="3.302" y2="19.558" width="0.1524" layer="21"/>
+<wire x1="3.302" y1="19.558" x2="3.302" y2="18.288" width="0.1524" layer="21"/>
+<wire x1="3.302" y1="18.288" x2="3.81" y2="18.288" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="18.288" x2="3.81" y2="19.558" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="19.558" x2="4.318" y2="19.558" width="0.1524" layer="21"/>
+<wire x1="4.318" y1="19.558" x2="4.318" y2="18.288" width="0.1524" layer="21"/>
+<wire x1="4.318" y1="18.288" x2="4.826" y2="18.288" width="0.1524" layer="21"/>
+<wire x1="4.826" y1="18.288" x2="4.826" y2="19.558" width="0.1524" layer="21"/>
+<wire x1="4.826" y1="19.558" x2="5.334" y2="19.558" width="0.1524" layer="21"/>
+<wire x1="5.334" y1="19.558" x2="5.334" y2="18.288" width="0.1524" layer="21"/>
+<wire x1="5.334" y1="18.288" x2="5.842" y2="18.288" width="0.1524" layer="21"/>
+<wire x1="5.842" y1="18.288" x2="5.842" y2="19.558" width="0.1524" layer="21"/>
+<wire x1="5.842" y1="19.558" x2="7.112" y2="19.558" width="0.1524" layer="21"/>
+<text x="8.382" y="18.034" size="1.27" layer="48" font="vector">More antenna gain</text>
+<wire x1="7.62" y1="19.304" x2="11.938" y2="23.622" width="0.000128125" layer="48"/>
+<wire x1="11.938" y1="13.716" x2="7.62" y2="18.034" width="0.000128125" layer="48"/>
 </package>
 </packages>
 <symbols>
@@ -215,13 +259,13 @@ It features onboard oscillator (both main &amp; low power 32.768 Hz), and integr
 <wire x1="22.86" y1="-22.86" x2="-25.4" y2="-22.86" width="0.254" layer="94"/>
 <pin name="VDD" x="-30.48" y="-12.7" visible="pin" length="middle" direction="pas"/>
 <pin name="P0.30" x="-15.24" y="-27.94" visible="pin" length="middle" swaplevel="1" rot="R90"/>
-<pin name="P0.00" x="-12.7" y="-27.94" visible="pin" length="middle" swaplevel="1" rot="R90"/>
-<pin name="P0.01" x="-10.16" y="-27.94" visible="pin" length="middle" swaplevel="1" rot="R90"/>
-<pin name="P0.02" x="-7.62" y="-27.94" visible="pin" length="middle" swaplevel="1" rot="R90"/>
-<pin name="P0.03" x="-5.08" y="-27.94" visible="pin" length="middle" swaplevel="1" rot="R90"/>
-<pin name="P0.04" x="-2.54" y="-27.94" visible="pin" length="middle" swaplevel="1" rot="R90"/>
-<pin name="P0.05" x="0" y="-27.94" visible="pin" length="middle" swaplevel="1" rot="R90"/>
-<pin name="P0.06" x="2.54" y="-27.94" visible="pin" length="middle" swaplevel="1" rot="R90"/>
+<pin name="P0.00/AREF0" x="-12.7" y="-27.94" visible="pin" length="middle" swaplevel="1" rot="R90"/>
+<pin name="P0.01/AIN2" x="-10.16" y="-27.94" visible="pin" length="middle" swaplevel="1" rot="R90"/>
+<pin name="P0.02/AIN3" x="-7.62" y="-27.94" visible="pin" length="middle" swaplevel="1" rot="R90"/>
+<pin name="P0.03/AIN4" x="-5.08" y="-27.94" visible="pin" length="middle" swaplevel="1" rot="R90"/>
+<pin name="P0.04/AIN5" x="-2.54" y="-27.94" visible="pin" length="middle" swaplevel="1" rot="R90"/>
+<pin name="P0.05/AIN6" x="0" y="-27.94" visible="pin" length="middle" swaplevel="1" rot="R90"/>
+<pin name="P0.06/AIN7" x="2.54" y="-27.94" visible="pin" length="middle" swaplevel="1" rot="R90"/>
 <pin name="P0.07" x="5.08" y="-27.94" visible="pin" length="middle" swaplevel="1" rot="R90"/>
 <pin name="GND@1" x="-30.48" y="-10.16" visible="pin" length="middle" direction="pas"/>
 <pin name="P0.08" x="7.62" y="-27.94" visible="pin" length="middle" swaplevel="1" rot="R90"/>
@@ -245,8 +289,8 @@ It features onboard oscillator (both main &amp; low power 32.768 Hz), and integr
 <pin name="P0.23" x="-30.48" y="7.62" visible="pin" length="middle" swaplevel="1"/>
 <pin name="P0.24" x="-30.48" y="5.08" visible="pin" length="middle" swaplevel="1"/>
 <pin name="P0.25" x="-30.48" y="2.54" visible="pin" length="middle" swaplevel="1"/>
-<pin name="P0.26" x="-30.48" y="0" visible="pin" length="middle" swaplevel="1"/>
-<pin name="P0.27" x="-30.48" y="-2.54" visible="pin" length="middle" swaplevel="1"/>
+<pin name="P0.26/AIN0/XL2" x="-30.48" y="0" visible="pin" length="middle" swaplevel="1"/>
+<pin name="P0.27/AIN1/XL1" x="-30.48" y="-2.54" visible="pin" length="middle" swaplevel="1"/>
 <pin name="P0.28" x="-30.48" y="-5.08" visible="pin" length="middle" swaplevel="1"/>
 <pin name="P0.29" x="-30.48" y="-7.62" visible="pin" length="middle" swaplevel="1"/>
 <text x="-2.54" y="20.32" size="1.27" layer="95">&gt;NAME</text>
@@ -263,13 +307,13 @@ It features onboard oscillator (both main &amp; low power 32.768 Hz), and integr
 <connects>
 <connect gate="YJ-14015" pin="GND@1" pad="GND"/>
 <connect gate="YJ-14015" pin="GND@2" pad="GND@2"/>
-<connect gate="YJ-14015" pin="P0.00" pad="P.00"/>
-<connect gate="YJ-14015" pin="P0.01" pad="P.01"/>
-<connect gate="YJ-14015" pin="P0.02" pad="P.02"/>
-<connect gate="YJ-14015" pin="P0.03" pad="P.03"/>
-<connect gate="YJ-14015" pin="P0.04" pad="P.04"/>
-<connect gate="YJ-14015" pin="P0.05" pad="P.05"/>
-<connect gate="YJ-14015" pin="P0.06" pad="P.06"/>
+<connect gate="YJ-14015" pin="P0.00/AREF0" pad="P.00"/>
+<connect gate="YJ-14015" pin="P0.01/AIN2" pad="P.01"/>
+<connect gate="YJ-14015" pin="P0.02/AIN3" pad="P.02"/>
+<connect gate="YJ-14015" pin="P0.03/AIN4" pad="P.03"/>
+<connect gate="YJ-14015" pin="P0.04/AIN5" pad="P.04"/>
+<connect gate="YJ-14015" pin="P0.05/AIN6" pad="P.05"/>
+<connect gate="YJ-14015" pin="P0.06/AIN7" pad="P.06"/>
 <connect gate="YJ-14015" pin="P0.07" pad="P.07"/>
 <connect gate="YJ-14015" pin="P0.08" pad="P.08"/>
 <connect gate="YJ-14015" pin="P0.09" pad="P.09"/>
@@ -289,8 +333,8 @@ It features onboard oscillator (both main &amp; low power 32.768 Hz), and integr
 <connect gate="YJ-14015" pin="P0.23" pad="P.23"/>
 <connect gate="YJ-14015" pin="P0.24" pad="P.24"/>
 <connect gate="YJ-14015" pin="P0.25" pad="P.25"/>
-<connect gate="YJ-14015" pin="P0.26" pad="P.26"/>
-<connect gate="YJ-14015" pin="P0.27" pad="P.27"/>
+<connect gate="YJ-14015" pin="P0.26/AIN0/XL2" pad="P.26"/>
+<connect gate="YJ-14015" pin="P0.27/AIN1/XL1" pad="P.27"/>
 <connect gate="YJ-14015" pin="P0.28" pad="P.28"/>
 <connect gate="YJ-14015" pin="P0.29" pad="P.29"/>
 <connect gate="YJ-14015" pin="P0.30" pad="P.30"/>
@@ -7495,7 +7539,7 @@ gauge SMBUS</text>
 <segment>
 <wire x1="43.18" y1="76.2" x2="25.4" y2="76.2" width="0.1524" layer="91"/>
 <label x="28.702" y="76.454" size="1.27" layer="95" font="vector"/>
-<pinref part="U1" gate="YJ-14015" pin="P0.27"/>
+<pinref part="U1" gate="YJ-14015" pin="P0.27/AIN1/XL1"/>
 </segment>
 </net>
 <net name="KSI2" class="1">
@@ -7543,7 +7587,7 @@ gauge SMBUS</text>
 <segment>
 <wire x1="66.04" y1="50.8" x2="66.04" y2="40.64" width="0.1524" layer="91"/>
 <label x="65.786" y="43.942" size="1.27" layer="95" font="vector" rot="R90"/>
-<pinref part="U1" gate="YJ-14015" pin="P0.02"/>
+<pinref part="U1" gate="YJ-14015" pin="P0.02/AIN3"/>
 </segment>
 </net>
 <net name="KSI6" class="1">
@@ -7555,7 +7599,7 @@ gauge SMBUS</text>
 <segment>
 <wire x1="71.12" y1="50.8" x2="71.12" y2="40.64" width="0.1524" layer="91"/>
 <label x="70.866" y="43.942" size="1.27" layer="95" font="vector" rot="R90"/>
-<pinref part="U1" gate="YJ-14015" pin="P0.04"/>
+<pinref part="U1" gate="YJ-14015" pin="P0.04/AIN5"/>
 </segment>
 </net>
 <net name="KSI7" class="1">
@@ -7567,7 +7611,7 @@ gauge SMBUS</text>
 <segment>
 <wire x1="73.66" y1="50.8" x2="73.66" y2="40.64" width="0.1524" layer="91"/>
 <label x="73.406" y="43.942" size="1.27" layer="95" font="vector" rot="R90"/>
-<pinref part="U1" gate="YJ-14015" pin="P0.05"/>
+<pinref part="U1" gate="YJ-14015" pin="P0.05/AIN6"/>
 </segment>
 </net>
 <net name="KSO0" class="1">
@@ -7627,7 +7671,7 @@ gauge SMBUS</text>
 <segment>
 <wire x1="43.18" y1="78.74" x2="22.86" y2="78.74" width="0.1524" layer="91"/>
 <label x="28.702" y="78.994" size="1.27" layer="95" font="vector"/>
-<pinref part="U1" gate="YJ-14015" pin="P0.26"/>
+<pinref part="U1" gate="YJ-14015" pin="P0.26/AIN0/XL2"/>
 </segment>
 </net>
 <net name="KSO5" class="1">
@@ -7639,7 +7683,7 @@ gauge SMBUS</text>
 <segment>
 <wire x1="60.96" y1="50.8" x2="60.96" y2="38.1" width="0.1524" layer="91"/>
 <label x="60.706" y="43.942" size="1.27" layer="95" font="vector" rot="R90"/>
-<pinref part="U1" gate="YJ-14015" pin="P0.00"/>
+<pinref part="U1" gate="YJ-14015" pin="P0.00/AREF0"/>
 </segment>
 </net>
 <net name="KSO6" class="1">
@@ -7651,7 +7695,7 @@ gauge SMBUS</text>
 <segment>
 <wire x1="68.58" y1="50.8" x2="68.58" y2="38.1" width="0.1524" layer="91"/>
 <label x="68.326" y="43.942" size="1.27" layer="95" font="vector" rot="R90"/>
-<pinref part="U1" gate="YJ-14015" pin="P0.03"/>
+<pinref part="U1" gate="YJ-14015" pin="P0.03/AIN4"/>
 </segment>
 </net>
 <net name="KSO7" class="1">
@@ -7663,7 +7707,7 @@ gauge SMBUS</text>
 <segment>
 <wire x1="76.2" y1="50.8" x2="76.2" y2="38.1" width="0.1524" layer="91"/>
 <label x="75.946" y="43.942" size="1.27" layer="95" font="vector" rot="R90"/>
-<pinref part="U1" gate="YJ-14015" pin="P0.06"/>
+<pinref part="U1" gate="YJ-14015" pin="P0.06/AIN7"/>
 </segment>
 </net>
 <net name="KSO8" class="1">
