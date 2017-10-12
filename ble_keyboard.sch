@@ -7234,7 +7234,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attribute name="OC_TME" value=" MIC5200-3.3YS"/>
 </part>
 <part name="GND7" library="logic-supply" deviceset="GND" device=""/>
-<part name="CIN_VIN" library="con-molex" deviceset="53?-04" device="047"/>
+<part name="CON3" library="con-molex" deviceset="53?-04" device="047"/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND8" library="logic-supply" deviceset="GND" device=""/>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0603" value="10nF"/>
@@ -7335,12 +7335,12 @@ gauge SMBUS</text>
 <attribute name="OC_TME" x="66.04" y="154.94" size="1.27" layer="96" font="vector" display="off"/>
 </instance>
 <instance part="GND7" gate="1" x="22.86" y="139.7" rot="MR0"/>
-<instance part="CIN_VIN" gate="-1" x="17.78" y="154.94" rot="MR0"/>
-<instance part="CIN_VIN" gate="-2" x="17.78" y="152.4" smashed="yes" rot="MR0">
+<instance part="CON3" gate="-1" x="17.78" y="154.94" rot="MR0"/>
+<instance part="CON3" gate="-2" x="17.78" y="152.4" smashed="yes" rot="MR0">
 <attribute name="NAME" x="15.24" y="151.638" size="1.524" layer="95" rot="MR0"/>
 </instance>
-<instance part="CIN_VIN" gate="-3" x="17.78" y="149.86" rot="MR0"/>
-<instance part="CIN_VIN" gate="-4" x="17.78" y="147.32" rot="MR0"/>
+<instance part="CON3" gate="-3" x="17.78" y="149.86" rot="MR0"/>
+<instance part="CON3" gate="-4" x="17.78" y="147.32" rot="MR0"/>
 <instance part="+3V5" gate="G$1" x="78.74" y="162.56" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="75.692" y="165.354" size="1.778" layer="96" rot="MR180"/>
 </instance>
@@ -7447,7 +7447,7 @@ gauge SMBUS</text>
 <junction x="165.1" y="137.16"/>
 </segment>
 <segment>
-<pinref part="CIN_VIN" gate="-4" pin="S"/>
+<pinref part="CON3" gate="-4" pin="S"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="20.32" y1="147.32" x2="22.86" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="147.32" x2="22.86" y2="142.24" width="0.1524" layer="91"/>
@@ -8022,7 +8022,7 @@ gauge SMBUS</text>
 <wire x1="27.94" y1="152.4" x2="27.94" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="134.62" x2="45.72" y2="134.62" width="0.1524" layer="91"/>
 <label x="45.72" y="134.62" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="CIN_VIN" gate="-2" pin="S"/>
+<pinref part="CON3" gate="-2" pin="S"/>
 <wire x1="27.94" y1="152.4" x2="20.32" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -8041,13 +8041,13 @@ gauge SMBUS</text>
 <wire x1="25.4" y1="149.86" x2="25.4" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="132.08" x2="45.72" y2="132.08" width="0.1524" layer="91"/>
 <label x="45.72" y="132.08" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="CIN_VIN" gate="-3" pin="S"/>
+<pinref part="CON3" gate="-3" pin="S"/>
 <wire x1="25.4" y1="149.86" x2="20.32" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LIPO_RAW" class="0">
 <segment>
-<pinref part="CIN_VIN" gate="-1" pin="S"/>
+<pinref part="CON3" gate="-1" pin="S"/>
 <pinref part="VREG1" gate="VREG" pin="VIN"/>
 <wire x1="55.88" y1="154.94" x2="50.8" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="1"/>
