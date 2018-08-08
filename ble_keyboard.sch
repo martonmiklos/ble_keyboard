@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.1">
+<eagle version="9.1.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7159,6 +7159,107 @@ We've spent an enormous amount of time creating and checking these footprints an
 </deviceset>
 </devicesets>
 </library>
+<library name="transistor-fet">
+<description>&lt;b&gt;Field Effect Transistors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;&lt;p&gt;
+&lt;p&gt;
+Symbols changed according to IEC617&lt;p&gt; 
+All types, packages and assignment to symbols and pins checked&lt;p&gt;
+Package outlines partly checked&lt;p&gt;
+&lt;p&gt;
+JFET = junction FET&lt;p&gt;
+IGBT-x = insulated gate bipolar transistor&lt;p&gt;
+x=N: NPN; x=P: PNP&lt;p&gt;
+IGFET-mc-nnn; (IGFET=insulated gate field effect transistor)&lt;P&gt;
+m=D: depletion mode (Verdr&amp;auml;ngungstyp)&lt;p&gt;
+m=E: enhancement mode (Anreicherungstyp)&lt;p&gt;
+c: N=N-channel; P=P-Channel&lt;p&gt;
+GDSB: gate, drain, source, bulk&lt;p&gt;
+&lt;p&gt;
+by R. Vogg  15.March.2002</description>
+<packages>
+<package name="SC75_INFINEON">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt; Reflow soldering&lt;p&gt;
+INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
+<wire x1="-0.7" y1="0.3" x2="-0.45" y2="0.3" width="0.2032" layer="21"/>
+<wire x1="-0.45" y1="0.3" x2="0.45" y2="0.3" width="0.2032" layer="51"/>
+<wire x1="0.45" y1="0.3" x2="0.7" y2="0.3" width="0.2032" layer="21"/>
+<wire x1="0.7" y1="0.3" x2="0.7" y2="-0.15" width="0.2032" layer="21"/>
+<wire x1="0.7" y1="-0.15" x2="0.7" y2="-0.3" width="0.2032" layer="51"/>
+<wire x1="0.7" y1="-0.3" x2="-0.7" y2="-0.3" width="0.2032" layer="51"/>
+<wire x1="-0.7" y1="-0.3" x2="-0.7" y2="-0.15" width="0.2032" layer="51"/>
+<wire x1="-0.7" y1="-0.15" x2="-0.7" y2="0.3" width="0.2032" layer="21"/>
+<smd name="1" x="-0.5" y="-0.575" dx="0.4" dy="0.65" layer="1"/>
+<smd name="2" x="0" y="0.575" dx="0.4" dy="0.65" layer="1"/>
+<smd name="3" x="0.5" y="-0.575" dx="0.4" dy="0.65" layer="1"/>
+<text x="-0.8" y="1" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.8" y="-2.3" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.6" y1="-0.8" x2="-0.4" y2="-0.35" layer="51"/>
+<rectangle x1="0.4" y1="-0.8" x2="0.6" y2="-0.35" layer="51"/>
+<rectangle x1="-0.1" y1="0.35" x2="0.1" y2="0.8" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="P-MOSFET">
+<wire x1="0.762" y1="-0.762" x2="0.762" y2="0" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0" x2="0.762" y2="0.762" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-3.175" x2="0.762" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-2.54" x2="0.762" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="1.905" x2="0.762" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="2.54" x2="0.762" y2="3.175" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="0.762" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="-2.54" x2="3.81" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="0.508" x2="3.81" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="3.81" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="-2.54" x2="3.81" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="3.048" y1="0.762" x2="3.302" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.302" y1="0.508" x2="3.81" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="0.508" x2="4.318" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="4.318" y1="0.508" x2="4.572" y2="0.254" width="0.1524" layer="94"/>
+<circle x="2.54" y="2.54" radius="0.3592" width="0" layer="94"/>
+<circle x="2.54" y="-2.54" radius="0.3592" width="0" layer="94"/>
+<text x="-11.43" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-11.43" y="-1.27" size="1.778" layer="95">&gt;NAME</text>
+<pin name="S" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="G" x="-2.54" y="2.54" visible="off" length="short" direction="pas"/>
+<pin name="D" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<polygon width="0.1524" layer="94">
+<vertex x="3.81" y="0.508"/>
+<vertex x="4.318" y="-0.254"/>
+<vertex x="3.302" y="-0.254"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="2.54" y="0"/>
+<vertex x="1.524" y="0.762"/>
+<vertex x="1.524" y="-0.762"/>
+</polygon>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BSA223SP" prefix="Q">
+<description>&lt;b&gt;OptiMOS(R)-P Small-Signal-Transistor&lt;/b&gt; P-Channel, Enhancement mode, Super Logic Level (2.5 V rated)&lt;p&gt;
+Source: http://www.infineon.com/upload/Document/BSA223SP_Rev1.3.pdf</description>
+<gates>
+<gate name="G$1" symbol="P-MOSFET" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SC75_INFINEON">
+<connects>
+<connect gate="G$1" pin="D" pad="2"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7178,20 +7279,19 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="FRAME1" library="martonmiklos" deviceset="A4L-LOC" device="" value="PAG1"/>
 <part name="GND3" library="logic-supply" deviceset="GND" device=""/>
 <part name="SWD" library="con-molex" deviceset="53?-04" device="047"/>
-<part name="CN1" library="hirose_FH34SRJ" deviceset="FH34SRJ-6S" device=""/>
-<part name="CN2" library="hirose_FH34SRJ" deviceset="FH34SRJ-10S" device=""/>
+<part name="BACKLIGHT" library="hirose_FH34SRJ" deviceset="FH34SRJ-6S" device=""/>
+<part name="TOUCHPAD" library="hirose_FH34SRJ" deviceset="FH34SRJ-10S" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
-<part name="VREG1" library="dp_devices" deviceset="VREG_3PINS" device="-SOT-223" value=" MIC5200-3.3YS ">
-<attribute name="OC_TME" value=" MIC5200-3.3YS"/>
+<part name="VREG1" library="dp_devices" deviceset="VREG_3PINS" device="-SOT-223" value="MCP1703T-3302E/DB">
+<attribute name="OC_TME" value="MCP1703T-3302E/DB"/>
 </part>
 <part name="GND7" library="logic-supply" deviceset="GND" device=""/>
-<part name="CON3" library="con-molex" deviceset="53?-04" device="047"/>
+<part name="PWR" library="con-molex" deviceset="53?-04" device="047"/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND8" library="logic-supply" deviceset="GND" device=""/>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0603" value="10nF"/>
@@ -7204,7 +7304,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="C6" library="rcl" deviceset="C-EU" device="C0603" value="1uF"/>
 <part name="GND10" library="logic-supply" deviceset="GND" device=""/>
 <part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
-<part name="RN1" library="dp_devices" deviceset="RESISTOR_ARRAY_4" device="" value="2K"/>
+<part name="RN1" library="dp_devices" deviceset="RESISTOR_ARRAY_4" device="" value="1K5">
+<attribute name="OC_TME" value="DR1206-1K5-4/8"/>
+</part>
 <part name="C7" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="Q1" library="SparkFun" deviceset="MOSFET-NCHANNEL" device="SMD" value="DMG6968U-7"/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R0603" value="47K"/>
@@ -7213,9 +7315,25 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="C8" library="rcl" deviceset="C-EU" device="C0603" value="10nF"/>
 <part name="C9" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="C10" library="rcl" deviceset="C-EU" device="C0603" value="1uF"/>
-<part name="CON2" library="JTC41002" deviceset="41002W90-NP-S-30" device=""/>
+<part name="KEYBOARD" library="JTC41002" deviceset="41002W90-NP-S-30" device=""/>
+<part name="+3V8" library="supply1" deviceset="+3V3" device=""/>
+<part name="Q2" library="transistor-fet" deviceset="BSA223SP" device="" value="DMG2305UX-7">
+<attribute name="OC_TME" value="DMG2305UX-7"/>
+</part>
+<part name="R3" library="rcl" deviceset="R-EU_" device="R0603" value="47K"/>
 </parts>
 <sheets>
+<sheet>
+<description>Cover page</description>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
 <sheet>
 <plain>
 <wire x1="149.86" y1="114.3" x2="185.42" y2="114.3" width="0.1524" layer="94"/>
@@ -7241,9 +7359,9 @@ conn</text>
 <wire x1="254" y1="63.5" x2="187.96" y2="63.5" width="0.1524" layer="94"/>
 <wire x1="187.96" y1="63.5" x2="187.96" y2="172.72" width="0.1524" layer="94"/>
 <text x="208.28" y="170.18" size="2.54" layer="94" font="vector" align="top-left">Key matrix connector</text>
-<wire x1="5.08" y1="114.3" x2="104.14" y2="114.3" width="0.1524" layer="94"/>
-<wire x1="104.14" y1="114.3" x2="104.14" y2="35.56" width="0.1524" layer="94"/>
-<wire x1="104.14" y1="35.56" x2="5.08" y2="35.56" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="114.3" x2="147.32" y2="114.3" width="0.1524" layer="94"/>
+<wire x1="147.32" y1="114.3" x2="147.32" y2="35.56" width="0.1524" layer="94"/>
+<wire x1="147.32" y1="35.56" x2="5.08" y2="35.56" width="0.1524" layer="94"/>
 <wire x1="5.08" y1="114.3" x2="5.08" y2="35.56" width="0.1524" layer="94"/>
 <text x="7.62" y="111.76" size="2.54" layer="94" font="vector" align="top-left">Bluetooth 4.0 MCU</text>
 <text x="7.62" y="170.18" size="2.54" layer="94" font="vector" align="top-left">Power input &amp;
@@ -7273,14 +7391,11 @@ gauge SMBUS</text>
 <instance part="SWD" gate="-2" x="172.72" y="81.28"/>
 <instance part="SWD" gate="-3" x="172.72" y="78.74"/>
 <instance part="SWD" gate="-4" x="172.72" y="76.2"/>
-<instance part="CN1" gate="G$1" x="124.46" y="144.78"/>
-<instance part="CN2" gate="G$1" x="172.72" y="142.24" rot="MR180"/>
+<instance part="BACKLIGHT" gate="G$1" x="124.46" y="144.78"/>
+<instance part="TOUCHPAD" gate="G$1" x="172.72" y="142.24" rot="MR180"/>
 <instance part="GND4" gate="1" x="180.34" y="121.92"/>
 <instance part="GND5" gate="1" x="132.08" y="127"/>
 <instance part="GND6" gate="1" x="165.1" y="121.92"/>
-<instance part="+3V1" gate="G$1" x="160.02" y="160.02" smashed="yes">
-<attribute name="VALUE" x="157.226" y="161.036" size="1.778" layer="96"/>
-</instance>
 <instance part="+3V2" gate="G$1" x="25.4" y="99.06" smashed="yes">
 <attribute name="VALUE" x="22.86" y="101.6" size="1.778" layer="96"/>
 </instance>
@@ -7292,14 +7407,14 @@ gauge SMBUS</text>
 <attribute name="OC_TME" x="66.04" y="154.94" size="1.27" layer="96" font="vector" display="off"/>
 </instance>
 <instance part="GND7" gate="1" x="22.86" y="139.7" rot="MR0"/>
-<instance part="CON3" gate="-1" x="17.78" y="154.94" rot="MR0"/>
-<instance part="CON3" gate="-2" x="17.78" y="152.4" smashed="yes" rot="MR0">
+<instance part="PWR" gate="-1" x="17.78" y="154.94" rot="MR0"/>
+<instance part="PWR" gate="-2" x="17.78" y="152.4" smashed="yes" rot="MR0">
 <attribute name="NAME" x="15.24" y="151.638" size="1.524" layer="95" rot="MR0"/>
 </instance>
-<instance part="CON3" gate="-3" x="17.78" y="149.86" rot="MR0"/>
-<instance part="CON3" gate="-4" x="17.78" y="147.32" rot="MR0"/>
-<instance part="+3V5" gate="G$1" x="78.74" y="162.56" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="75.692" y="165.354" size="1.778" layer="96" rot="MR180"/>
+<instance part="PWR" gate="-3" x="17.78" y="149.86" rot="MR0"/>
+<instance part="PWR" gate="-4" x="17.78" y="147.32" rot="MR0"/>
+<instance part="+3V5" gate="G$1" x="88.9" y="162.56" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="85.852" y="165.354" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="GND8" gate="1" x="66.04" y="137.16" rot="MR0"/>
 <instance part="C1" gate="G$1" x="187.96" y="43.18"/>
@@ -7314,7 +7429,9 @@ gauge SMBUS</text>
 <instance part="+3V7" gate="G$1" x="218.44" y="53.34" rot="MR0"/>
 <instance part="RN1" gate="C" x="215.9" y="83.82"/>
 <instance part="RN1" gate="B" x="215.9" y="76.2"/>
-<instance part="RN1" gate="A" x="215.9" y="68.58"/>
+<instance part="RN1" gate="A" x="215.9" y="68.58">
+<attribute name="OC_TME" x="215.9" y="68.58" size="1.27" layer="96" font="vector" display="off"/>
+</instance>
 <instance part="RN1" gate="D" x="215.9" y="91.44"/>
 <instance part="C7" gate="G$1" x="246.38" y="43.18"/>
 <instance part="Q1" gate="G$1" x="76.2" y="22.86"/>
@@ -7324,7 +7441,14 @@ gauge SMBUS</text>
 <instance part="C8" gate="G$1" x="30.48" y="149.86"/>
 <instance part="C9" gate="G$1" x="40.64" y="149.86"/>
 <instance part="C10" gate="G$1" x="50.8" y="149.86"/>
-<instance part="CON2" gate="G1" x="238.76" y="119.38" rot="MR180"/>
+<instance part="KEYBOARD" gate="G1" x="238.76" y="119.38" rot="MR180"/>
+<instance part="+3V8" gate="G$1" x="114.3" y="96.52" smashed="yes">
+<attribute name="VALUE" x="111.506" y="97.536" size="1.778" layer="96"/>
+</instance>
+<instance part="Q2" gate="G$1" x="124.46" y="88.9" rot="R90">
+<attribute name="OC_TME" x="124.46" y="88.9" size="1.27" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="R3" gate="G$1" x="114.3" y="83.82" rot="R90"/>
 </instances>
 <busses>
 <bus name="KSI[0..7]">
@@ -7353,8 +7477,8 @@ gauge SMBUS</text>
 <wire x1="241.3" y1="160.02" x2="248.92" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="160.02" x2="248.92" y2="81.28" width="0.1524" layer="91"/>
 <junction x="248.92" y="81.28"/>
-<pinref part="CON2" gate="G1" pin="MP1"/>
-<pinref part="CON2" gate="G1" pin="MP2"/>
+<pinref part="KEYBOARD" gate="G1" pin="MP1"/>
+<pinref part="KEYBOARD" gate="G1" pin="MP2"/>
 </segment>
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
@@ -7373,38 +7497,38 @@ gauge SMBUS</text>
 <pinref part="SWD" gate="-3" pin="S"/>
 </segment>
 <segment>
-<pinref part="CN2" gate="G$1" pin="MH1"/>
+<pinref part="TOUCHPAD" gate="G$1" pin="MH1"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="175.26" y1="157.48" x2="180.34" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="157.48" x2="180.34" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="129.54" x2="180.34" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="CN2" gate="G$1" pin="MH2"/>
+<pinref part="TOUCHPAD" gate="G$1" pin="MH2"/>
 <wire x1="175.26" y1="129.54" x2="180.34" y2="129.54" width="0.1524" layer="91"/>
 <junction x="180.34" y="129.54"/>
 </segment>
 <segment>
-<pinref part="CN1" gate="G$1" pin="MH2"/>
+<pinref part="BACKLIGHT" gate="G$1" pin="MH2"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="127" y1="154.94" x2="132.08" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="154.94" x2="132.08" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="CN1" gate="G$1" pin="MH1"/>
+<pinref part="BACKLIGHT" gate="G$1" pin="MH1"/>
 <wire x1="132.08" y1="137.16" x2="132.08" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="127" y1="137.16" x2="132.08" y2="137.16" width="0.1524" layer="91"/>
 <junction x="132.08" y="137.16"/>
 </segment>
 <segment>
-<pinref part="CN2" gate="G$1" pin="8"/>
+<pinref part="TOUCHPAD" gate="G$1" pin="8"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="170.18" y1="149.86" x2="165.1" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="149.86" x2="165.1" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="147.32" x2="165.1" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="137.16" x2="165.1" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="CN2" gate="G$1" pin="3"/>
+<pinref part="TOUCHPAD" gate="G$1" pin="3"/>
 <wire x1="170.18" y1="137.16" x2="165.1" y2="137.16" width="0.1524" layer="91"/>
 <junction x="165.1" y="137.16"/>
 </segment>
 <segment>
-<pinref part="CON3" gate="-4" pin="S"/>
+<pinref part="PWR" gate="-4" pin="S"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="20.32" y1="147.32" x2="22.86" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="147.32" x2="22.86" y2="142.24" width="0.1524" layer="91"/>
@@ -7473,7 +7597,7 @@ gauge SMBUS</text>
 <segment>
 <wire x1="236.22" y1="144.78" x2="205.74" y2="144.78" width="0.1524" layer="91"/>
 <label x="211.582" y="145.034" size="1.27" layer="95" font="vector"/>
-<pinref part="CON2" gate="G1" pin="25"/>
+<pinref part="KEYBOARD" gate="G1" pin="25"/>
 </segment>
 <segment>
 <wire x1="88.9" y1="76.2" x2="91.44" y2="76.2" width="0.1524" layer="91"/>
@@ -7485,7 +7609,7 @@ gauge SMBUS</text>
 <segment>
 <wire x1="236.22" y1="139.7" x2="208.28" y2="139.7" width="0.1524" layer="91"/>
 <label x="211.582" y="139.954" size="1.27" layer="95" font="vector"/>
-<pinref part="CON2" gate="G1" pin="23"/>
+<pinref part="KEYBOARD" gate="G1" pin="23"/>
 </segment>
 <segment>
 <wire x1="88.9" y1="78.74" x2="91.44" y2="78.74" width="0.1524" layer="91"/>
@@ -7497,7 +7621,7 @@ gauge SMBUS</text>
 <segment>
 <wire x1="236.22" y1="142.24" x2="208.28" y2="142.24" width="0.1524" layer="91"/>
 <label x="211.582" y="142.494" size="1.27" layer="95" font="vector"/>
-<pinref part="CON2" gate="G1" pin="24"/>
+<pinref part="KEYBOARD" gate="G1" pin="24"/>
 </segment>
 <segment>
 <wire x1="88.9" y1="91.44" x2="91.44" y2="91.44" width="0.1524" layer="91"/>
@@ -7509,7 +7633,7 @@ gauge SMBUS</text>
 <segment>
 <wire x1="236.22" y1="137.16" x2="208.28" y2="137.16" width="0.1524" layer="91"/>
 <label x="211.582" y="137.414" size="1.27" layer="95" font="vector"/>
-<pinref part="CON2" gate="G1" pin="22"/>
+<pinref part="KEYBOARD" gate="G1" pin="22"/>
 </segment>
 <segment>
 <wire x1="88.9" y1="93.98" x2="91.44" y2="93.98" width="0.1524" layer="91"/>
@@ -7521,7 +7645,7 @@ gauge SMBUS</text>
 <segment>
 <wire x1="236.22" y1="134.62" x2="208.28" y2="134.62" width="0.1524" layer="91"/>
 <label x="211.582" y="134.874" size="1.27" layer="95" font="vector"/>
-<pinref part="CON2" gate="G1" pin="21"/>
+<pinref part="KEYBOARD" gate="G1" pin="21"/>
 </segment>
 <segment>
 <wire x1="73.66" y1="50.8" x2="73.66" y2="48.26" width="0.1524" layer="91"/>
@@ -7533,7 +7657,7 @@ gauge SMBUS</text>
 <segment>
 <wire x1="236.22" y1="129.54" x2="208.28" y2="129.54" width="0.1524" layer="91"/>
 <label x="211.582" y="129.794" size="1.27" layer="95" font="vector"/>
-<pinref part="CON2" gate="G1" pin="19"/>
+<pinref part="KEYBOARD" gate="G1" pin="19"/>
 </segment>
 <segment>
 <wire x1="68.58" y1="50.8" x2="68.58" y2="48.26" width="0.1524" layer="91"/>
@@ -7545,7 +7669,7 @@ gauge SMBUS</text>
 <segment>
 <wire x1="236.22" y1="124.46" x2="208.28" y2="124.46" width="0.1524" layer="91"/>
 <label x="211.582" y="124.714" size="1.27" layer="95" font="vector"/>
-<pinref part="CON2" gate="G1" pin="17"/>
+<pinref part="KEYBOARD" gate="G1" pin="17"/>
 </segment>
 <segment>
 <wire x1="63.5" y1="50.8" x2="63.5" y2="48.26" width="0.1524" layer="91"/>
@@ -7557,7 +7681,7 @@ gauge SMBUS</text>
 <segment>
 <wire x1="236.22" y1="121.92" x2="208.28" y2="121.92" width="0.1524" layer="91"/>
 <label x="211.582" y="122.174" size="1.27" layer="95" font="vector"/>
-<pinref part="CON2" gate="G1" pin="16"/>
+<pinref part="KEYBOARD" gate="G1" pin="16"/>
 </segment>
 <segment>
 <wire x1="60.96" y1="50.8" x2="60.96" y2="48.26" width="0.1524" layer="91"/>
@@ -7569,7 +7693,7 @@ gauge SMBUS</text>
 <segment>
 <wire x1="236.22" y1="157.48" x2="205.74" y2="157.48" width="0.1524" layer="91"/>
 <label x="211.582" y="157.734" size="1.27" layer="95" font="vector"/>
-<pinref part="CON2" gate="G1" pin="30"/>
+<pinref part="KEYBOARD" gate="G1" pin="30"/>
 </segment>
 <segment>
 <wire x1="88.9" y1="66.04" x2="91.44" y2="66.04" width="0.1524" layer="91"/>
@@ -7581,7 +7705,7 @@ gauge SMBUS</text>
 <segment>
 <wire x1="236.22" y1="154.94" x2="205.74" y2="154.94" width="0.1524" layer="91"/>
 <label x="211.582" y="155.194" size="1.27" layer="95" font="vector"/>
-<pinref part="CON2" gate="G1" pin="29"/>
+<pinref part="KEYBOARD" gate="G1" pin="29"/>
 </segment>
 <segment>
 <wire x1="88.9" y1="71.12" x2="91.44" y2="71.12" width="0.1524" layer="91"/>
@@ -7593,7 +7717,7 @@ gauge SMBUS</text>
 <segment>
 <wire x1="236.22" y1="149.86" x2="205.74" y2="149.86" width="0.1524" layer="91"/>
 <label x="211.582" y="150.114" size="1.27" layer="95" font="vector"/>
-<pinref part="CON2" gate="G1" pin="27"/>
+<pinref part="KEYBOARD" gate="G1" pin="27"/>
 </segment>
 <segment>
 <wire x1="88.9" y1="73.66" x2="91.44" y2="73.66" width="0.1524" layer="91"/>
@@ -7605,7 +7729,7 @@ gauge SMBUS</text>
 <segment>
 <wire x1="236.22" y1="152.4" x2="205.74" y2="152.4" width="0.1524" layer="91"/>
 <label x="211.582" y="152.654" size="1.27" layer="95" font="vector"/>
-<pinref part="CON2" gate="G1" pin="28"/>
+<pinref part="KEYBOARD" gate="G1" pin="28"/>
 </segment>
 <segment>
 <wire x1="88.9" y1="86.36" x2="91.44" y2="86.36" width="0.1524" layer="91"/>
@@ -7617,7 +7741,7 @@ gauge SMBUS</text>
 <segment>
 <wire x1="236.22" y1="147.32" x2="208.28" y2="147.32" width="0.1524" layer="91"/>
 <label x="211.582" y="147.574" size="1.27" layer="95" font="vector"/>
-<pinref part="CON2" gate="G1" pin="26"/>
+<pinref part="KEYBOARD" gate="G1" pin="26"/>
 </segment>
 <segment>
 <wire x1="88.9" y1="88.9" x2="91.44" y2="88.9" width="0.1524" layer="91"/>
@@ -7629,7 +7753,7 @@ gauge SMBUS</text>
 <segment>
 <wire x1="236.22" y1="132.08" x2="205.74" y2="132.08" width="0.1524" layer="91"/>
 <label x="211.582" y="132.334" size="1.27" layer="95" font="vector"/>
-<pinref part="CON2" gate="G1" pin="20"/>
+<pinref part="KEYBOARD" gate="G1" pin="20"/>
 </segment>
 <segment>
 <wire x1="71.12" y1="50.8" x2="71.12" y2="48.26" width="0.1524" layer="91"/>
@@ -7641,7 +7765,7 @@ gauge SMBUS</text>
 <segment>
 <wire x1="236.22" y1="127" x2="205.74" y2="127" width="0.1524" layer="91"/>
 <label x="211.582" y="127.254" size="1.27" layer="95" font="vector"/>
-<pinref part="CON2" gate="G1" pin="18"/>
+<pinref part="KEYBOARD" gate="G1" pin="18"/>
 </segment>
 <segment>
 <wire x1="66.04" y1="50.8" x2="66.04" y2="48.26" width="0.1524" layer="91"/>
@@ -7653,7 +7777,7 @@ gauge SMBUS</text>
 <segment>
 <wire x1="236.22" y1="119.38" x2="205.74" y2="119.38" width="0.1524" layer="91"/>
 <label x="211.582" y="119.634" size="1.27" layer="95" font="vector"/>
-<pinref part="CON2" gate="G1" pin="15"/>
+<pinref part="KEYBOARD" gate="G1" pin="15"/>
 </segment>
 <segment>
 <wire x1="58.42" y1="50.8" x2="58.42" y2="48.26" width="0.1524" layer="91"/>
@@ -7665,7 +7789,7 @@ gauge SMBUS</text>
 <segment>
 <wire x1="236.22" y1="116.84" x2="205.74" y2="116.84" width="0.1524" layer="91"/>
 <label x="211.582" y="117.094" size="1.27" layer="95" font="vector"/>
-<pinref part="CON2" gate="G1" pin="14"/>
+<pinref part="KEYBOARD" gate="G1" pin="14"/>
 </segment>
 <segment>
 <wire x1="55.88" y1="50.8" x2="55.88" y2="48.26" width="0.1524" layer="91"/>
@@ -7677,7 +7801,7 @@ gauge SMBUS</text>
 <segment>
 <wire x1="236.22" y1="114.3" x2="205.74" y2="114.3" width="0.1524" layer="91"/>
 <label x="211.582" y="114.554" size="1.27" layer="95" font="vector"/>
-<pinref part="CON2" gate="G1" pin="13"/>
+<pinref part="KEYBOARD" gate="G1" pin="13"/>
 </segment>
 <segment>
 <wire x1="53.34" y1="50.8" x2="53.34" y2="48.26" width="0.1524" layer="91"/>
@@ -7689,7 +7813,7 @@ gauge SMBUS</text>
 <segment>
 <wire x1="236.22" y1="111.76" x2="205.74" y2="111.76" width="0.1524" layer="91"/>
 <label x="211.582" y="112.014" size="1.27" layer="95" font="vector"/>
-<pinref part="CON2" gate="G1" pin="12"/>
+<pinref part="KEYBOARD" gate="G1" pin="12"/>
 </segment>
 <segment>
 <wire x1="50.8" y1="50.8" x2="50.8" y2="48.26" width="0.1524" layer="91"/>
@@ -7701,7 +7825,7 @@ gauge SMBUS</text>
 <segment>
 <wire x1="236.22" y1="109.22" x2="205.74" y2="109.22" width="0.1524" layer="91"/>
 <label x="211.582" y="109.474" size="1.27" layer="95" font="vector"/>
-<pinref part="CON2" gate="G1" pin="11"/>
+<pinref part="KEYBOARD" gate="G1" pin="11"/>
 </segment>
 <segment>
 <wire x1="48.26" y1="50.8" x2="48.26" y2="48.26" width="0.1524" layer="91"/>
@@ -7713,7 +7837,7 @@ gauge SMBUS</text>
 <segment>
 <wire x1="236.22" y1="106.68" x2="205.74" y2="106.68" width="0.1524" layer="91"/>
 <label x="211.582" y="106.934" size="1.27" layer="95" font="vector"/>
-<pinref part="CON2" gate="G1" pin="10"/>
+<pinref part="KEYBOARD" gate="G1" pin="10"/>
 </segment>
 <segment>
 <wire x1="45.72" y1="50.8" x2="45.72" y2="48.26" width="0.1524" layer="91"/>
@@ -7725,7 +7849,7 @@ gauge SMBUS</text>
 <segment>
 <wire x1="236.22" y1="104.14" x2="205.74" y2="104.14" width="0.1524" layer="91"/>
 <label x="211.582" y="104.394" size="1.27" layer="95" font="vector"/>
-<pinref part="CON2" gate="G1" pin="9"/>
+<pinref part="KEYBOARD" gate="G1" pin="9"/>
 </segment>
 <segment>
 <wire x1="30.48" y1="71.12" x2="22.86" y2="71.12" width="0.1524" layer="91"/>
@@ -7737,7 +7861,7 @@ gauge SMBUS</text>
 <segment>
 <wire x1="236.22" y1="101.6" x2="205.74" y2="101.6" width="0.1524" layer="91"/>
 <label x="211.582" y="101.854" size="1.27" layer="95" font="vector"/>
-<pinref part="CON2" gate="G1" pin="8"/>
+<pinref part="KEYBOARD" gate="G1" pin="8"/>
 </segment>
 <segment>
 <wire x1="30.48" y1="73.66" x2="22.86" y2="73.66" width="0.1524" layer="91"/>
@@ -7749,7 +7873,7 @@ gauge SMBUS</text>
 <segment>
 <wire x1="236.22" y1="99.06" x2="205.74" y2="99.06" width="0.1524" layer="91"/>
 <label x="211.582" y="99.314" size="1.27" layer="95" font="vector"/>
-<pinref part="CON2" gate="G1" pin="7"/>
+<pinref part="KEYBOARD" gate="G1" pin="7"/>
 </segment>
 <segment>
 <wire x1="30.48" y1="76.2" x2="22.86" y2="76.2" width="0.1524" layer="91"/>
@@ -7783,13 +7907,13 @@ gauge SMBUS</text>
 </net>
 <net name="BACKL_LED_K" class="0">
 <segment>
-<pinref part="CN1" gate="G$1" pin="3"/>
+<pinref part="BACKLIGHT" gate="G$1" pin="3"/>
 <wire x1="121.92" y1="147.32" x2="116.84" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="147.32" x2="116.84" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="CN1" gate="G$1" pin="1"/>
+<pinref part="BACKLIGHT" gate="G$1" pin="1"/>
 <wire x1="116.84" y1="149.86" x2="116.84" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="152.4" x2="121.92" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="CN1" gate="G$1" pin="2"/>
+<pinref part="BACKLIGHT" gate="G$1" pin="2"/>
 <wire x1="121.92" y1="149.86" x2="116.84" y2="149.86" width="0.1524" layer="91"/>
 <junction x="116.84" y="149.86"/>
 <wire x1="116.84" y1="149.86" x2="114.3" y2="149.86" width="0.1524" layer="91"/>
@@ -7802,40 +7926,40 @@ gauge SMBUS</text>
 <label x="78.74" y="30.48" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="LED_TP_R" class="0">
 <segment>
 <wire x1="236.22" y1="93.98" x2="223.52" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="93.98" x2="223.52" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="91.44" x2="220.98" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="RN1" gate="D" pin="2"/>
-<pinref part="CON2" gate="G1" pin="5"/>
+<pinref part="KEYBOARD" gate="G1" pin="5"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="LED_RFOFF_R" class="0">
 <segment>
 <wire x1="220.98" y1="83.82" x2="226.06" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="83.82" x2="226.06" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="91.44" x2="236.22" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="RN1" gate="C" pin="2"/>
-<pinref part="CON2" gate="G1" pin="4"/>
+<pinref part="KEYBOARD" gate="G1" pin="4"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="LED_CAPS_R" class="0">
 <segment>
 <wire x1="220.98" y1="76.2" x2="228.6" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="228.6" y1="76.2" x2="228.6" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="228.6" y1="88.9" x2="236.22" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="RN1" gate="B" pin="2"/>
-<pinref part="CON2" gate="G1" pin="3"/>
+<pinref part="KEYBOARD" gate="G1" pin="3"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="LED_FN_R" class="0">
 <segment>
 <wire x1="236.22" y1="86.36" x2="231.14" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="86.36" x2="231.14" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="68.58" x2="220.98" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="RN1" gate="A" pin="2"/>
-<pinref part="CON2" gate="G1" pin="2"/>
+<pinref part="KEYBOARD" gate="G1" pin="2"/>
 </segment>
 </net>
 <net name="LED_TP" class="0">
@@ -7878,12 +8002,6 @@ gauge SMBUS</text>
 </net>
 <net name="+3V3" class="0">
 <segment>
-<pinref part="CN2" gate="G$1" pin="10"/>
-<wire x1="170.18" y1="154.94" x2="160.02" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="154.94" x2="160.02" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="+3V1" gate="G$1" pin="+3V3"/>
-</segment>
-<segment>
 <pinref part="U1" gate="G$1" pin="VDD"/>
 <wire x1="30.48" y1="66.04" x2="25.4" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="66.04" x2="25.4" y2="96.52" width="0.1524" layer="91"/>
@@ -7899,13 +8017,13 @@ gauge SMBUS</text>
 <wire x1="195.58" y1="99.06" x2="195.58" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="96.52" x2="236.22" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="+3V4" gate="G$1" pin="+3V3"/>
-<pinref part="CON2" gate="G1" pin="6"/>
+<pinref part="KEYBOARD" gate="G1" pin="6"/>
 </segment>
 <segment>
 <pinref part="VREG1" gate="VREG" pin="VOUT"/>
-<wire x1="76.2" y1="154.94" x2="78.74" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="154.94" x2="88.9" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="+3V5" gate="G$1" pin="+3V3"/>
-<wire x1="78.74" y1="154.94" x2="78.74" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="154.94" x2="88.9" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>
@@ -7939,10 +8057,19 @@ gauge SMBUS</text>
 <wire x1="246.38" y1="48.26" x2="246.38" y2="45.72" width="0.1524" layer="91"/>
 <junction x="238.76" y="48.26"/>
 </segment>
+<segment>
+<pinref part="+3V8" gate="G$1" pin="+3V3"/>
+<wire x1="114.3" y1="91.44" x2="114.3" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="Q2" gate="G$1" pin="S"/>
+<wire x1="114.3" y1="91.44" x2="119.38" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="114.3" y1="88.9" x2="114.3" y2="91.44" width="0.1524" layer="91"/>
+<junction x="114.3" y="91.44"/>
+</segment>
 </net>
 <net name="TOUCH_ALERT" class="0">
 <segment>
-<pinref part="CN2" gate="G$1" pin="1"/>
+<pinref part="TOUCHPAD" gate="G$1" pin="1"/>
 <wire x1="170.18" y1="132.08" x2="162.56" y2="132.08" width="0.1524" layer="91"/>
 <label x="162.56" y="132.08" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
@@ -7966,7 +8093,7 @@ gauge SMBUS</text>
 </net>
 <net name="I2C_SCL" class="0">
 <segment>
-<pinref part="CN2" gate="G$1" pin="6"/>
+<pinref part="TOUCHPAD" gate="G$1" pin="6"/>
 <wire x1="170.18" y1="144.78" x2="160.02" y2="144.78" width="0.1524" layer="91"/>
 <label x="160.02" y="144.78" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
@@ -7979,13 +8106,13 @@ gauge SMBUS</text>
 <wire x1="27.94" y1="152.4" x2="27.94" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="134.62" x2="45.72" y2="134.62" width="0.1524" layer="91"/>
 <label x="45.72" y="134.62" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="CON3" gate="-2" pin="S"/>
+<pinref part="PWR" gate="-2" pin="S"/>
 <wire x1="27.94" y1="152.4" x2="20.32" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="I2C_SDA" class="0">
 <segment>
-<pinref part="CN2" gate="G$1" pin="4"/>
+<pinref part="TOUCHPAD" gate="G$1" pin="4"/>
 <wire x1="170.18" y1="139.7" x2="160.02" y2="139.7" width="0.1524" layer="91"/>
 <label x="160.02" y="139.7" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
@@ -7998,13 +8125,13 @@ gauge SMBUS</text>
 <wire x1="25.4" y1="149.86" x2="25.4" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="132.08" x2="45.72" y2="132.08" width="0.1524" layer="91"/>
 <label x="45.72" y="132.08" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="CON3" gate="-3" pin="S"/>
+<pinref part="PWR" gate="-3" pin="S"/>
 <wire x1="25.4" y1="149.86" x2="20.32" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LIPO_RAW" class="0">
 <segment>
-<pinref part="CON3" gate="-1" pin="S"/>
+<pinref part="PWR" gate="-1" pin="S"/>
 <pinref part="VREG1" gate="VREG" pin="VIN"/>
 <wire x1="55.88" y1="154.94" x2="50.8" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="1"/>
@@ -8022,10 +8149,10 @@ gauge SMBUS</text>
 <label x="41.656" y="155.448" size="1.27" layer="95" font="vector"/>
 </segment>
 <segment>
-<pinref part="CN1" gate="G$1" pin="6"/>
+<pinref part="BACKLIGHT" gate="G$1" pin="6"/>
 <wire x1="121.92" y1="139.7" x2="119.38" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="139.7" x2="119.38" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="CN1" gate="G$1" pin="5"/>
+<pinref part="BACKLIGHT" gate="G$1" pin="5"/>
 <wire x1="119.38" y1="142.24" x2="121.92" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="142.24" x2="116.84" y2="142.24" width="0.1524" layer="91"/>
 <junction x="119.38" y="142.24"/>
@@ -8042,6 +8169,31 @@ gauge SMBUS</text>
 <wire x1="63.5" y1="15.24" x2="60.96" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="15.24" x2="60.96" y2="22.86" width="0.1524" layer="91"/>
 <junction x="60.96" y="22.86"/>
+</segment>
+</net>
+<net name="NENABLE_TOUCHPAD" class="0">
+<segment>
+<pinref part="Q2" gate="G$1" pin="G"/>
+<wire x1="121.92" y1="86.36" x2="121.92" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="76.2" x2="114.3" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="114.3" y1="76.2" x2="114.3" y2="78.74" width="0.1524" layer="91"/>
+<junction x="114.3" y="76.2"/>
+<pinref part="U1" gate="G$1" pin="P0.12"/>
+<wire x1="88.9" y1="68.58" x2="114.3" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="68.58" x2="114.3" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="V_TOUCHPAD" class="0">
+<segment>
+<pinref part="Q2" gate="G$1" pin="D"/>
+<wire x1="129.54" y1="91.44" x2="132.08" y2="91.44" width="0.1524" layer="91"/>
+<label x="132.08" y="91.44" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+<segment>
+<pinref part="TOUCHPAD" gate="G$1" pin="10"/>
+<wire x1="170.18" y1="154.94" x2="160.02" y2="154.94" width="0.1524" layer="91"/>
+<label x="160.02" y="154.94" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
